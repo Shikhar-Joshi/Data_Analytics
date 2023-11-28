@@ -1,0 +1,54 @@
+# Q1. What exactly is []?
+Ans. `[]` is an empty list.
+
+# Q2. In a list of values stored in a variable called spam, how would you assign the value 'hello' as the third value? (Assume [2, 4, 6, 8, 10] are in spam.)
+Ans. We can assign like this: spam[2] = 'hello'.
+
+Let's pretend the spam includes the list[‘a’, ‘b’, ‘c’, ‘d’] for the next three queries.
+
+# Q3. What is the value of spam[int(int('3' * 2) / 11)]?
+Ans. 'd'.
+
+# Q4. What is the value of spam[-1]?
+Ans. 'd'.
+
+# Q5. What is the value of spam[:2]?
+Ans. ['a', 'b'].
+
+Let's pretend bacon has the list [3.14, 'cat,' 11, 'cat,' True] for the next three questions.
+
+# Q6. What is the value of bacon.index('cat')?
+Ans. Value is 1.
+
+# Q7. How does bacon.append(99) change the look of the list value in bacon?
+Ans. New list is [3.14, 'cat', 11, 'cat', True, 99].
+
+# Q8. How does bacon.remove('cat') change the look of the list in bacon?
+Ans. New list is [3.14, 11, 'cat', True].
+
+# Q9. What are the list concatenation and list replication operators?
+Ans. The list concatenation operator is `+`, and the list replication operator is `*`.
+
+# Q10. What is difference between the list methods append() and insert()?
+Ans. The `append()` method adds an element to the end of the list. The `insert()` method can add an element at any position in the list.
+
+# Q11. What are the two methods for removing items from a list?
+Ans. The two methods for removing items from a list are `remove()` and `pop()`. 
+
+# Q12. Describe how list values and string values are identical.
+Ans. List values and string values are identical in that they can both be indexed, sliced, concatenated, replicated, and used in `for` loops. They can also be used with the len() function, 'in' and 'not in' operators.
+
+# Q13. What's the difference between tuples and lists?
+Ans. The main difference between tuples and lists is that tuples are immutable (i.e., they cannot be modified after they are created), while lists are mutable.
+
+# Q14. How do you type a tuple value that only contains the integer 42?
+Ans. Suppose a variable "tup" is to be assigned 42 then we can assign like: tup = (42).
+
+# Q15. How do you get a list value's tuple form? How do you get a tuple value's list form?
+Ans. We can get a list value's tuple form by using the `tuple()` function, and we can get a tuple value's list form by using the `list()` function.
+
+# Q16. Variables that "contain" list values are not necessarily lists themselves. Instead, what do they contain?
+Ans. Variables that "contain" list values actually contain references to list values.
+
+# Q17. How do you distinguish between copy.copy() and copy.deepcopy()?
+Ans. copy.copy() makes a shallow copy, replicating the structure of the original object. Changes to the original object’s elements will affect the copy. copy.deepcopy(), on the other hand, makes a deep copy, creating duplicates of every item in the original object. Changes to the original object won’t affect the deep copy.
