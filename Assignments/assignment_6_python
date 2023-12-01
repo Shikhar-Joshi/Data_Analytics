@@ -1,0 +1,51 @@
+# Q1. What are escape characters, and how do you use them?
+Ans. Escape characters are special characters that are used to insert special character sequences into a string. Escape characters are prefixed with a backslash \.
+
+# Q2. What do the escape characters n and t stand for?
+Ans. The escape character '\n' stands for a newline, and '\t' stands for a tab.
+
+# Q3. What is the way to include backslash characters in a string?
+Ans. You can include a backslash character in a string using '\\'.
+
+# Q4. The string "Howl's Moving Castle" is a correct value. Why isn't the single quote character in the word Howl's not escaped a problem?
+Ans. It's not a problem because the string is enclosed in double quotes ". We can enclosed strings in single quotes `'` or double quotes `"`, so if a string contains a single quote character, you can enclose it in double quotes without needing to escape the single quote.
+
+# Q5. How do you write a string of newlines if you don't want to use the n character?
+Ans. You can write a string of newlines without using the `\n` character by using triple quotes """ or '''. Here's an example:
+print("""
+Hello
+Ineuron
+""")
+
+# Q6. What are the values of the given expressions?
+'Hello, world!'[1]
+'Hello, world!'[0:5]
+'Hello, world!'[:5]
+'Hello, world!'[3:]
+Ans. 
+- 'Hello, world!'[1] returns 'e'
+- 'Hello, world!'[0:5] returns 'Hello'
+- 'Hello, world!'[:5] returns 'Hello'
+- 'Hello, world!'[3:] returns 'lo, world!'
+
+# Q7. What are the values of the following expressions?
+'Hello'.upper()
+'Hello'.upper().isupper()
+'Hello'.upper().lower()
+Ans. 
+- 'Hello'.upper() returns 'HELLO'
+- 'Hello'.upper().isupper() returns True
+- 'Hello'.upper().lower() returns 'hello'
+
+# Q8. What are the values of the following expressions?
+'Remember, remember, the fifth of July.'.split()
+'-'.join('There can only one.'.split())
+Ans. 
+- 'Remember, remember, the fifth of July.'.split() returns ['Remember,', 'remember,', 'the', 'fifth', 'of', 'July.']
+- '-'.join('There can only one.'.split()) returns 'There-can-only-one.'
+
+# Q9. What are the methods for right-justifying, left-justifying, and centering a string?
+Ans. The methods for right-justifying, left-justifying, and centering a string are .rjust(), .ljust(), and .center(), respectively.
+
+# Q10. What is the best way to remove whitespace characters from the start or end?
+Ans. The best way to remove whitespace characters from the start or end of a string is by using the .strip() method. 
