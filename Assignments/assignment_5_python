@@ -1,0 +1,29 @@
+# Q1. What does an empty dictionary's code look like?
+Ans. An empty dictionary looks like: dictStore = {} where dictStore is a random variable.
+
+# Q2. What is the value of a dictionary value with the key 'foo' and the value 42?
+Ans. The dictionary would look like this: {'foo': 42}.
+
+# Q3. What is the most significant distinction between a dictionary and a list?
+Ans. The most significant distinction is that items in dictionaries are accessed via keys and not via their position (index).
+
+# Q4. What happens if you try to access spam['foo'] if spam is {'bar': 100}?
+Ans. We will get a 'KeyError' because there is no key 'foo' in the dictionary.
+
+# Q5. If a dictionary is stored in spam, what is the difference between the expressions 'cat' in spam and 'cat' in spam.keys()?
+Ans. Both check if 'cat' is a key in the dictionary. Hence no difference.
+
+# Q6. If a dictionary is stored in spam, what is the difference between the expressions 'cat' in spam and 'cat' in spam.values()?
+Ans. 'cat' in spam checks if 'cat' is a key in the dictionary, while 'cat' in spam.values() checks if 'cat' is a value in the dictionary.
+
+# Q7. What is a shortcut for the following code?
+    if 'color' not in spam:
+        spam['color'] = 'black'
+Ans. A shortcut for this code is: spam.setdefault('color', 'black').
+
+# Q8. How do you "pretty print" dictionary values using which module and function?
+Ans. We can use the pprint module and the pprint() function to "pretty print" dictionary values. For example: 
+import pprint
+pprint.pprint(dictionary_name)
+
+This will print the dictionary in a nicely formatted and more readable way.
