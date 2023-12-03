@@ -1,0 +1,43 @@
+# Q1. Create an assert statement that throws an AssertionError if the variable spam is a negative integer.
+Ans. assert spam >= 0
+
+# Q2. Write an assert statement that triggers an AssertionError if the variables eggs and bacon contain strings that are the same as each other,even if their cases are different.
+Ans. assert eggs.lower() != bacon.lower()
+
+# Q3. Create an assert statement that throws an AssertionError every time.
+Ans. assert False
+
+# Q4. What are the two lines that must be present in your software in order to call logging.debug()?
+Ans. Here are the two lines:
+import logging
+logging.basicConfig(level=logging.DEBUG)
+
+# Q5. What are the two lines that your program must have in order to have logging.debug() send a logging message to a file named programLog.txt?
+Ans. Here are the two lines:
+import logging
+logging.basicConfig(filename='programLog.txt', level=logging.DEBUG)
+
+# Q6. What are the five levels of logging?
+Ans. The five levels of logging are: DEBUG, INFO, WARNING, ERROR, and CRITICAL.
+
+# Q7. What line of code would you add to your software to disable all logging messages?
+Ans. Here's the line of code:
+logging.disable(logging.CRITICAL)
+
+# Q8. Why is using logging messages better than using print() to display the same message?
+Ans. Logging messages are better than using `print()` because they provide a lot of useful features:
+- You can choose to record only messages that are of a certain level of importance (like only recording errors and ignoring info messages).
+- You can send the log messages to different outputs, like a log file, the console, or even an email.
+- The log messages can contain more information than a simple string, like the time the message was logged, where in the code the message came from, and more.
+
+# Q9. What are the differences between the Step Over, Step In, and Step Out buttons in the debugger?
+Ans. 
+- Step Over: Executes the next line of code, but if that line contains a function, it doesn't go into that function.
+- Step In: Executes the next line of code, and if that line contains a function, it steps into that function.
+- Step Out: Executes lines of code at high speed until it steps out of the current function.
+
+# Q10. After you click Continue, when will the debugger stop?
+Ans. After you click Continue, the debugger will stop when it has executed all the remaining lines of code or when it hits another breakpoint.
+
+# Q11. What is the concept of a breakpoint?
+Ans. A breakpoint is a marker set on a line of code that causes the debugger to pause whenever the program execution reaches that line. This allows you to inspect the current state of the program and helps in debugging.
