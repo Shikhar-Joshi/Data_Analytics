@@ -1,0 +1,23 @@
+# Q1. What does RGBA stand for?
+Ans. RGBA stands for Red Green Blue Alpha. While RGB is used to define colors, the 'Alpha' indicates the opacity level of the color.
+
+# Q2. From the Pillow module, how do you get the RGBA value of any images?
+Ans. You can get the RGBA values of an image in the Pillow module using the 'convert' method with 'RGBA' as the argument on an Image object.
+
+# Q3. What is a box tuple, and how does it work?
+Ans. A box tuple is a tuple of four integer coordinates that represent a rectangular region in an image. The four integers are as follows: (left, top, right, bottom).
+
+# Q4. Use your image and load in notebook then, How can you find out the width and height of an Image object?
+Ans. We can find out the width and height of an Image object using the 'size' attribute, which returns a tuple in the form (width, height).
+
+# Q5. What method would you call to get Image object for a 100×100 image, excluding the lower-left quarter of it?
+Ans. We would call the 'crop' method on the Image object. We would need to pass a box tuple that defines the area to be cropped, which in this case would be (0, 0, 100, 50).
+
+# Q6. After making changes to an Image object, how could you save it as an image file?
+Ans. We can save it as an image file using the 'save' method, passing the desired filename as the argument.
+
+# Q7. What module contains Pillow’s shape-drawing code?
+Ans. Pillow's shape-drawing code is contained in the 'ImageDraw' module.
+
+# Q8. Image objects do not have drawing methods. What kind of object does? How do you get this kind of object?
+Ans. 'ImageDraw' objects have drawing methods. You can get an 'ImageDraw' object by calling the 'Draw' function from the 'ImageDraw' module and passing your image as an argument.
